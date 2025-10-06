@@ -1,4 +1,11 @@
-﻿def power(a, b):
+﻿def get_number(prompt):
+    while True:
+        try:
+            return float(input(prompt))
+        except ValueError:
+            print("Ошибка: введите число")
+
+def power(a, b):
     return a ** b
 def square_root(a):
     return a ** 0.5
